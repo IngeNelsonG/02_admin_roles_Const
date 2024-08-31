@@ -1,0 +1,78 @@
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Define la fuente general para todo el cuerpo del documento */
+    background-color: #f7f9fc; /* Establece un color de fondo claro para la página */
+    color: #333; /* Define el color del texto en un tono gris oscuro */
+    margin: 0; /* Elimina el margen por defecto alrededor del cuerpo de la página */
+    padding: 0; /* Elimina el padding por defecto alrededor del cuerpo de la página */
+    display: flex; /* Usa Flexbox para la disposición de los elementos dentro del cuerpo */
+    justify-content: center; /* Centra horizontalmente los elementos dentro del cuerpo */
+    align-items: center; /* Centra verticalmente los elementos dentro del cuerpo */
+    min-height: 100vh; /* Asegura que el cuerpo tenga al menos el 100% de la altura de la ventana de visualización */
+    
+}
+
+/* Contenedor principal para el formulario */
+.container {
+    max-width: 400px; /* Define un ancho máximo para el contenedor */
+    width: 100%; /* Establece que el contenedor ocupe el 100% del ancho disponible en su contenedor padre */
+    padding: 20px; /* Añade espacio interno alrededor del contenido del contenedor */
+    background-color: #ffffff; /* Establece un color de fondo blanco para el contenedor */
+    border-radius: 8px; /* Redondea las esquinas del contenedor */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* Aplica una sombra sutil para dar profundidad al contenedor */
+    display: flex; /* Usa Flexbox para la disposición de los elementos dentro del contenedor */
+    flex-direction: column; /* Organiza los elementos dentro del contenedor en una columna vertical */
+    align-items: center; /* Centra horizontalmente los elementos dentro del contenedor */
+}
+
+/* Estilo para el encabezado */
+h1 {
+    font-size: 24px; /* Define el tamaño de la fuente para el encabezado */
+    margin-bottom: 20px; /* Añade espacio debajo del encabezado para separarlo del contenido siguiente */
+    color: #333; /* Establece el color del texto del encabezado en un tono gris oscuro */
+}
+
+/* Estilo para el formulario */
+#loginForm {
+    width: 100%; /* Asegura que el formulario ocupe todo el ancho del contenedor */
+    display: flex; /* Usa Flexbox para la disposición de los campos del formulario */
+    flex-direction: column; /* Organiza los campos del formulario en una columna vertical */
+}
+
+/* Estilo para los campos de entrada en el formulario */
+#loginForm input[type="text"],
+#loginForm input[type="password"] {
+    width: 100%; /* Define que los campos de entrada ocupen el 100% del ancho del formulario */
+    padding: 12px; /* Añade espacio interno dentro de los campos de entrada */
+    margin-bottom: 15px; /* Añade espacio debajo de cada campo de entrada para separarlos */
+    border: 1px solid #d1d5db; /* Establece un borde de 1 píxel de grosor y un color gris claro para los campos de entrada */
+    border-radius: 4px; /* Redondea las esquinas de los campos de entrada */
+    font-size: 16px; /* Define el tamaño de la fuente dentro de los campos de entrada */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total del elemento */
+}
+
+/* Estilo para el botón de envío del formulario */
+#loginForm button {
+    width: 100%; /* Define que el botón ocupe el 100% del ancho del formulario */
+    padding: 14px; /* Añade espacio interno dentro del botón */
+    background-color: #2683fc; /* Establece un color de fondo azul para el botón */
+    color: #fff; /* Define el color del texto del botón en blanco */
+    border: none; /* Elimina el borde por defecto del botón */
+    border-radius: 4px; /* Redondea las esquinas del botón */
+    cursor: pointer; /* Cambia el cursor a una mano cuando se pasa sobre el botón */
+    font-size: 16px; /* Define el tamaño de la fuente dentro del botón */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Añade una transición suave para los cambios en el color de fondo y la sombra */
+}
+
+/* Estilo para el botón de envío cuando el ratón pasa sobre él */
+#loginForm button:hover {
+    background-color: #0f4283; /* Cambia el color de fondo del botón a un azul más oscuro al pasar el ratón sobre él */
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2); /* Añade una sombra más pronunciada al pasar el ratón sobre el botón */
+}
+
+/* Estilo para los mensajes de retroalimentación */
+#loginFeedback {
+    color: #d9534f; /* Define el color del texto de los mensajes de retroalimentación en rojo */
+    margin-bottom: 10px; /* Añade espacio debajo del mensaje de retroalimentación */
+    text-align: center; /* Centra el texto del mensaje de retroalimentación */
+}   

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!-- Declara el tipo de documento como HTML5 -->
+<html lang="es">
+<!-- Inicia el documento HTML y establece el idioma como español -->
+
+<head>
+    <!-- Contiene metadatos y enlaces a recursos externos. -->
+    <meta charset="UTF-8">
+    <!-- Especifica la codificación de caracteres como UTF-8 para soportar caracteres especiales. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Asegura que el contenido se ajuste correctamente a las pantallas de dispositivos móviles. -->
+    <meta name="description" content="Panel de Administración">
+    <!-- Proporciona una breve descripción del contenido de la página para motores de búsqueda. -->
+    <title>Panel de Administración</title>
+    <!-- Define el título de la página que aparece en la pestaña del navegador. -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Enlaza un archivo de hoja de estilos CSS externo para definir la apariencia de la página. -->
+    <link rel="icon" href="/img/favicon.ico">
+
+<body>
+
+    <header>
+        <button class="close-btn" onclick="window.location.href='logout.html'">Cerrar</button>
+        <!-- Sección para el encabezado de la página. -->
+        <h1 style="margin-top: -4%">Sistema de Gestión de Asistencia</h1>
+        <!-- Título del sistema o aplicación. -->
+
+        <!-- Botón para cerrar sesión o regresar a la página de inicio. Redirige al usuario a 'index.html' cuando se hace clic. -->
+    </header>
+
+    <div class="container">
+        <!-- Contenedor principal para la estructura del panel de administración. -->
+        <div class="admin-panel">
+            <!-- Contenedor específico para el panel de administración. -->
+            <h1>Panel de Administración</h1>
+            <!-- Título principal del panel de administración. -->
+
+            <!-- Sección para la gestión de asistencia. -->
+            <h2>Gestión de Usuarios</h2>
+            <!-- Subtítulo para la gestión de asistencia. -->
+            <div>
+                <!-- Contenedor para la tabla de asistencia. -->
+                <h3 style="text-align: left;">Tabla de Usuarios</h3>
+                <!-- Título para la tabla de asistencia. -->
+                <table id="usersTable" class="admin-table">
+                    <!-- Define una tabla con clase 'admin-table' para estilos específicos. -->
+                    <thead>
+                        <!-- Cabecera de la tabla que define los encabezados de las columnas. -->
+                        <tr>
+                            <th style="color: black;">Nombres</th>
+                            <th style="color: black;">Correo</th>
+                            <th style="color: black;">Telefono</th>
+                            <th style="color: black;">Tipo de Usuario</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+            </section>
+        </div>
+    </div>
+
+    <footer>
+        <!-- Sección para el pie de página. -->
+        <p>&copy; 2024 Sistema de Gestión de Asistencia. Todos los derechos reservados. USTA Tunja</p>
+        <!-- Texto de derechos reservados con la fecha actual y la institución que lo ofrece. -->
+    </footer>
+
+    <script src="js/panel-admin.js"></script>
+    <!-- Vincula el archivo JavaScript externo para la funcionalidad del formulario y la tabla -->
+</body>
+
+</html>

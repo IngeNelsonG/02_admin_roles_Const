@@ -1,0 +1,9 @@
+/project-directory
+|-- index.html
+|-- login.html
+|-- admin-panel.html
+|-- docente-panel.html
+|-- estudiante-panel.html
+|-- styles.css
+|-- app.js
+|-- login.js

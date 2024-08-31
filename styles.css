@@ -1,0 +1,405 @@
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente moderna y legible */
+    background: linear-gradient(14deg, rgba(1,18,32,1) 29%, rgba(21,24,172,1) 53%, rgba(105,116,255,1) 77%); /* Color de fondo claro para la página */
+    color: #333; /* Color de texto oscuro para buena legibilidad */
+    margin: 0; /* Elimina márgenes predeterminados del navegador */
+    padding: 0; /* Elimina el padding predeterminado del navegador */
+    display: flex; /* Usa Flexbox para el diseño */
+    flex-direction: column; /* Coloca los elementos en columna */
+    min-height: 100vh; /* Asegura que el contenido llene toda la altura de la ventana */
+}
+
+/* Estilo del encabezado */
+h1 {
+    text-align: center; /* Centra el texto del encabezado */
+    color: black; /* Color del texto del encabezado */
+    margin: 10px 0; /* Espacio superior e inferior alrededor del encabezado */
+    font-size: 2.2em; /* Tamaño de fuente mayor para el encabezado */
+}
+
+h4 {
+    text-align: left; /* Centra el texto del encabezado */
+    color: black; /* Color del texto del encabezado */
+    margin: 40px 0; /* Espacio superior e inferior alrededor del encabezado */
+    font-size: 1.4em; /* Tamaño de fuente mayor para el encabezado */
+}
+
+h2 {
+    text-align: center; /* Centra el texto del encabezado */
+    color: white; /* Color del texto del encabezado */
+    margin: 40px 0; /* Espacio superior e inferior alrededor del encabezado */
+    font-size: 2.2em; /* Tamaño de fuente mayor para el encabezado */
+}
+
+
+
+h3 {
+    text-align: center; /* Centra el texto del encabezado */
+    color: white; /* Color del texto del encabezado */
+    margin: 40px 0; /* Espacio superior e inferior alrededor del encabezado */
+    font-size: 1.4em; /* Tamaño de fuente mayor para el encabezado */
+}
+
+
+/*em es una unidad relativa que se basa en el tamaño de fuente del elemento padre. 
+Por ejemplo, si el tamaño de fuente del elemento padre es de 16 píxeles, 
+entonces 1em será igual a 16 píxeles. 
+2.2em será igual a 2.2 veces el tamaño de fuente del elemento padre 
+(en este caso, aproximadamente 35.2 píxeles si el tamaño base es de 16 píxeles).*/
+
+/* Estilo para el formulario */
+form {
+    max-width: 800px; /* Limita el ancho del formulario */
+    margin: 20px auto; /* Centra el formulario horizontalmente con un margen superior e inferior */
+    padding: 40px; /* Espacio interno alrededor del contenido del formulario */
+    background-color: #ffffff; /* Color de fondo blanco para el formulario */
+    border-radius: 5px; /* Bordes redondeados para un aspecto suave */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* Sombra sutil para darle profundidad */
+    display: flex; /* Usa Flexbox para el diseño del formulario */
+    flex-direction: column; /* Coloca los campos del formulario en columna */
+    width: 70%; /* Ancho completo del contenedor para los campos */
+}
+
+
+/* Estilo para los grupos de campos del formulario */
+.form-group {
+    margin-bottom: 20px; /* Espacio inferior entre los grupos de campos */
+}
+
+/* Estilo para las etiquetas de los campos del formulario */
+.form-group label {
+    font-weight: 500; /* Peso de fuente más fuerte para las etiquetas */
+    margin-bottom: 15px; /* Espacio inferior debajo de las etiquetas */
+    color: #555; /* Color del texto de las etiquetas */
+    font-size: 18px; /* Tamaño de fuente mayor para las etiquetas */
+}
+
+/* Estilo para los campos de entrada y select del formulario */
+.form-group input[type="text"],
+.form-group input[type="password"],
+.form-group input[type="email"],
+.form-group input[type="number"],
+.form-group select {
+    width: 100%; /* Ancho completo del contenedor para los campos */
+    padding: 12px; /* Espacio interno dentro de los campos */
+    border: 2px solid #90b1e2; /* Borde gris claro alrededor de los campos */
+    border-radius: 4px; /* Bordes redondeados para los campos */
+    font-size: 15px; /* Tamaño de fuente mayor para el texto dentro de los campos */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+}
+
+/* Estilo para el botón */
+button {
+    width: 100%; /* Ancho completo del contenedor para el botón */
+    padding: 14px; /* Espacio interno dentro del botón */
+    background-color: #2683fc; /* Color de fondo  para el botón */
+    color: #fff; /* Color del texto blanco para el botón */
+    border: none; /* Sin borde alrededor del botón */
+    border-radius: 4px; /* Bordes redondeados para el botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    font-size: 16px; /* Tamaño de fuente mayor para el texto del botón */
+    margin-top: 10px; /* Espacio superior para separar el botón del contenido superior */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra sutil para darle profundidad */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Suaviza las transiciones de color y sombra */
+}
+
+/* Estilo para el botón al pasar el ratón sobre él */
+button:hover {
+    background-color: #1e11db; /* Color de fondo  más oscuro al pasar el ratón */
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2); /* Sombra más pronunciada al pasar el ratón */
+}
+
+/* Estilo para la tabla */
+table {
+    width: 98%; /* Ancho de la tabla, centrado dentro del contenedor */
+    margin: 20px auto; /* Margen para centrar la tabla horizontalmente y espaciado superior e inferior */
+    border-collapse: collapse; /* Elimina el espacio entre los bordes de las celdas */
+    background-color: #fff; /* Color de fondo blanco para la tabla */
+    border-radius: 6px; /* Bordes redondeados para la tabla */
+    overflow: hidden; /* Oculta cualquier contenido que se desborde */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* Sombra sutil para darle profundidad a la tabla */
+    justify-content: center;
+    
+}
+
+/* Estilo para las celdas de la tabla */
+th, td {
+    padding: 14px; /* Espacio interno dentro de las celdas */
+    text-align: center; /* Alineación del texto a la izquierda */
+    font-size: 16px; /* Tamaño de fuente mayor para el texto dentro de las celdas */
+    border-bottom: 1px solid #e2e8f0; /* Borde inferior ligero para las celdas */
+}
+
+/* Estilo para las cabeceras de la tabla */
+th {
+    background-color: #226aa5; /* Color de fondo verde para las cabeceras */
+    color: #fff; /* Color del texto blanco para las cabeceras */
+}
+
+/* Estilo para las celdas de la tabla */
+td {
+    background-color: #f9fafb; /* Color de fondo ligeramente gris para las celdas */
+}
+
+/* Estilo para las filas pares en la tabla */
+tr:nth-child(even) td {
+    background-color: #f9fafb; /* Color de fondo más claro para las filas pares */
+}
+
+/* Estilo para los botones de acción en la tabla */
+.actions button {
+    padding: 8px 12px; /* Espacio interno dentro de los botones de acción */
+    border: none; /* Sin borde alrededor de los botones */
+    border-radius: 4px; /* Bordes redondeados para los botones */
+    cursor: pointer; /* Cambia el cursor al pasar sobre los botones */
+    font-size: 14px; /* Tamaño de fuente menor para los botones */
+    color: #fff; /* Color del texto blanco para los botones */
+    margin: 2px; /* Espacio alrededor de los botones */
+    transition: opacity 0.3s; /* Suaviza la transición de opacidad */
+}
+
+
+/* Estilo para los botones de acción al pasar el ratón sobre ellos */
+.actions button:hover {
+    opacity: 0.9; /* Reduce la opacidad al pasar el ratón sobre los botones */
+}
+
+/* Estilo para mensajes de retroalimentación */
+#feedback {
+    color: #080ceb; /* Color del texto para mensajes de retroalimentación (rojo) */
+    text-align: center; /* Centra el texto del mensaje */
+    margin-top: 10px; /* Espacio superior para separar el mensaje del contenido superior */
+}
+
+footer{
+    background-color: whitesmoke;
+    color: black;
+    padding: 0px 0px;
+    text-align: center;
+    margin: 5px;
+}
+
+.contenedor-pie {
+    display: flex;
+    justify-content: center;
+}
+
+.seccion-pie{
+    flex: 1;
+    margin: 20px;
+}
+
+
+.close-btn {
+    background-color: black; /* Color de fondo del botón de cierre */
+    color: #fff; /* Color del texto del botón de cierre */
+    border: none; /* Elimina el borde predeterminado del botón de cierre */
+    padding: 10px 15px; /* Espaciado interno del botón de cierre */
+    border-radius: 7px; /* Bordes redondeados del botón de cierre */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón de cierre */
+    margin-left: 87%;
+    width: 12%;  
+}
+
+.close-btn:hover {
+    background-color: #28236b;/* Color de fondo del botón de cierre al pasar el ratón */
+}
+
+header{
+    background-color: whitesmoke;
+    color: black;
+    padding: 0px 0px;
+    text-align: center;
+    margin: 2px;
+}
+
+header h3 {
+    margin: 0; /* Elimina el margen alrededor del encabezado h3 */
+    font-size: 1.5em; /* Tamaño de fuente del encabezado h3 */
+}
+
+
+/* Contenedor principal */
+.container {
+    flex: 1; /* Permite que el contenedor principal se expanda para llenar el espacio disponible */
+    width: 90%; /* Ancho del contenedor principal */
+    margin: 20px auto; 
+    text-align: center;/* Margen superior e inferior del contenedor principal y centrado horizontal */
+}
+
+/* Estilo para el pie de página */
+footer {
+    background-color: #4a90e2; /* Color de fondo del pie de página */
+    color: #fff; /* Color del texto en el pie de página */
+    text-align: center; /* Alinea el texto al centro del pie de página */
+    padding: 5px; /* Espaciado interno del pie de página */
+    font-size: 0.9em; /* Tamaño de fuente del pie de página */
+}
+
+/* Estilo para el formulario de inicio de sesión */
+.login-form {
+    background: #fff; /* Color de fondo del formulario de inicio de sesión */
+    padding: 20px; /* Espaciado interno del formulario */
+    border-radius: 8px; /* Bordes redondeados del formulario */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Sombra del formulario */
+    max-width: 400px; /* Ancho máximo del formulario */
+    margin: 0 auto; /* Centrado horizontal del formulario */
+}
+
+.login-form h1 {
+    margin-bottom: 20px; /* Margen inferior del encabezado del formulario */
+    color: #4a90e2; /* Color del texto del encabezado del formulario */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Margen inferior de los grupos de formulario */
+}
+
+label {
+    display: block; /* Hace que las etiquetas se muestren como bloques para ocupar toda la línea */
+    margin-bottom: 5px; /* Margen inferior de las etiquetas */
+    font-weight: bold; /* Establece el texto de las etiquetas en negrita */
+}
+
+input[type="text"], input[type="password"], select {
+    width: 100%; /* Ancho completo de los campos de entrada y selección */
+    padding: 10px; /* Espaciado interno de los campos de entrada y selección */
+    border-radius: 4px; /* Bordes redondeados de los campos de entrada y selección */
+    border: 1px solid #ccc; /* Borde de los campos de entrada y selección */
+    box-sizing: border-box; /* Incluye padding y border en el ancho total del campo */
+}
+
+button {
+    background-color: #4a90e2; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    border: none; /* Elimina el borde predeterminado del botón */
+    padding: 10px 15px; /* Espaciado interno del botón */
+    border-radius: 4px; /* Bordes redondeados del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    font-size: 16px; /* Tamaño de fuente del botón */
+}
+
+button:hover {
+    background-color: #357ABD; /* Color de fondo del botón al pasar el ratón */
+}
+
+/* Estilo para el panel de administración */
+.admin-panel {
+    background: #fff; /* Color de fondo del panel de administración */
+    padding: 20px; /* Espaciado interno del panel de administración */
+    border-radius: 8px; /* Bordes redondeados del panel de administración */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Sombra del panel de administración */
+}
+
+.admin-panel h1, .admin-panel h2, .admin-panel h3 {
+    color: #4a90e2; /* Color del texto en los encabezados del panel de administración */
+}
+
+.admin-table, .student-table {
+    width: 100%; /* Ancho completo de las tablas */
+    border-collapse: collapse; /* Colapsa los bordes de las celdas de la tabla */
+    margin-bottom: 20px; /* Margen inferior de las tablas */
+}
+
+.admin-table th, .student-table th, .admin-table td, .student-table td {
+    padding: 10px; /* Espaciado interno de las celdas de las tablas */
+    border: 1px solid #ddd; /* Borde de las celdas de las tablas */
+}
+
+.admin-table th, .student-table th {
+    background-color: #f4f4f4; /* Color de fondo de los encabezados de las tablas */
+    text-align: center; /* Alineación del texto en los encabezados de las tablas */
+}
+
+.actions button {
+    background-color: #2b38f1; /* Color de fondo de los botones de acción */
+    color: #fff; /* Color del texto en los botones de acción */
+    padding: 5px 10px; /* Espaciado interno de los botones de acción */
+    border: none; /* Elimina el borde predeterminado de los botones de acción */
+    border-radius: 4px; /* Bordes redondeados de los botones de acción */
+    cursor: pointer; /* Cambia el cursor al pasar sobre los botones de acción */
+}
+
+.actions button:hover {
+    background-color: #6016b4; /* Color de fondo de los botones de acción al pasar el ratón */
+}
+
+.close-btn {
+    background-color: #3c1deb; /* Color de fondo del botón de cierre */
+    color: #fff; /* Color del texto del botón de cierre */
+    border: none; /* Elimina el borde predeterminado del botón de cierre */
+    padding: 10px 15px; /* Espaciado interno del botón de cierre */
+    border-radius: 4px; /* Bordes redondeados del botón de cierre */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón de cierre */
+}
+
+.close-btn:hover {
+    background-color: #413fd4; /* Color de fondo del botón de cierre al pasar el ratón */
+}
+
+/* Estilo para el panel del estudiante */
+.student-panel {
+    background: #fff; /* Color de fondo del panel del estudiante */
+    padding: 20px; /* Espaciado interno del panel del estudiante */
+    border-radius: 8px; /* Bordes redondeados del panel del estudiante */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Sombra del panel del estudiante */
+}
+
+.student-table th, .student-table td {
+    padding: 10px; /* Espaciado interno de las celdas de la tabla del estudiante */
+    border: 1px solid #ddd; /* Borde de las celdas de la tabla del estudiante */
+}
+
+.student-table th {
+    background-color: #f4f4f4; /* Color de fondo de los encabezados de la tabla del estudiante */
+}
+
+/* Estilo para el panel del docente */
+.teacher-panel {
+    background: #fff; /* Color de fondo del panel del docente */
+    padding: 20px; /* Espaciado interno del panel del docente */
+    border-radius: 8px; /* Bordes redondeados del panel del docente */
+    box-shadow: 0 0 10px rgba(165, 11, 11, 0.1); /* Sombra del panel del docente */
+    width: 50% 0;
+    text-align: center;
+}
+
+.students-table {
+    width: 100%; /* Ancho completo de la tabla de estudiantes */
+    border-collapse: collapse; /* Colapsa los bordes de las celdas de la tabla de estudiantes */
+    margin-bottom: 20px; /* Margen inferior de la tabla de estudiantes */
+}
+
+.students-table th, .students-table td {
+    padding: 10px; /* Espaciado interno de las celdas de la tabla de estudiantes */
+    border: 1px solid #ddd; /* Borde de las celdas de la tabla de estudiantes */
+}
+
+.students-table th {
+    background-color: #f4f4f4; /* Color de fondo de los encabezados de la tabla de estudiantes */
+}
+
+/* Estilo para botones en el panel del docente */
+.teacher-panel button {
+    background-color: #4a90e2; /* Color de fondo del botón en el panel del docente */
+    color: #fff; /* Color del texto del botón en el panel del docente */
+    border: none; /* Elimina el borde predeterminado del botón en el panel del docente */
+    padding: 10px 15px; /* Espaciado interno del botón en el panel del docente */
+    border-radius: 4px; /* Bordes redondeados del botón en el panel del docente */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón en el panel del docente */
+    font-size: 16px; /* Tamaño de fuente del botón en el panel del docente */
+}
+
+.teacher-panel button:hover {
+    background-color: #357ABD; /* Color de fondo del botón en el panel del docente al pasar el ratón */
+}
+
+.form-group select {
+    width: 100%; /* Ancho completo de los campos de selección */
+    padding: 10px; /* Espaciado interno de los campos de selección */
+    border-radius: 4px; /* Bordes redondeados de los campos de selección */
+    border: 1px solid #f5f0f0; /* Borde de los campos de selección */
+    box-sizing: border-box; /* Incluye padding y border en el ancho total del campo */
+}
+

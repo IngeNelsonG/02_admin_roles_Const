@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!-- Declara el tipo de documento como HTML5 -->
+<html lang="es">
+<!-- Inicia el documento HTML y establece el idioma como español -->
+
+<head>
+    <!-- Sección de encabezado del documento -->
+    <meta charset="UTF-8">
+    <!-- Define la codificación de caracteres como UTF-8 para soportar caracteres especiales -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Establece el viewport para que el diseño sea adaptable a diferentes tamaños de pantalla -->
+    <title>Cierre de Sesión</title>
+    <!-- Define el título de la página que aparece en la pestaña del navegador -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Vincula el archivo CSS externo que contiene los estilos para la página de cierre de sesión -->
+    <link rel="icon" href="/img/favicon.ico">
+</head>
+
+<body>
+    <!-- Cuerpo del documento -->
+    <div class="container">
+        <!-- Contenedor principal para centrar y estilizar el contenido de la página de cierre de sesión -->
+        <h1>Salir</h1>
+        <!-- Encabezado principal que indica la acción de salir -->
+
+        <p>Estás siendo desconectado. Por favor, regresa al <a href="login.html">inicio de sesión</a>.</p>
+        <!-- Texto que informa al usuario sobre el proceso de desconexión y proporciona un enlace para regresar al inicio de sesión -->
+
+        <script>
+            // Elimina datos de sesión aquí si es necesario
+            window.location.href = 'login.html';
+            // Redirige automáticamente al usuario a la página de inicio de sesión
+        </script>
+    </div>
+</body>
+
+</html>
